@@ -1,10 +1,23 @@
 package com.deep.web.dao;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
+import com.deep.web.validator.ValidEmail;
+
 public class Offer {
 
 		private int id;
+		@Size(max=15,min=3 ,message="name must be between 3 to 15 characters")
 		private String name;
+
+		@NotNull
+		//@Pattern(regexp=".*\\@.*\\..*",message="please add valid email")
+		@ValidEmail
 		private String email;
+		
+		@Size(max=100,min=10 ,message="text must be between 10 to 100 characters")
 		private String text;
 		
 		public Offer(){
@@ -46,6 +59,8 @@ public class Offer {
 			this.text = text;
 		}
 		
-		
+		public String toString(){
+			return " id:- "+id+" name:- "+name+" email:- "+email+" text:- "+text;
+		}
 		
 }

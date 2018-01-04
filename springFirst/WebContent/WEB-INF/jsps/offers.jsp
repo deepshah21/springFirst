@@ -22,13 +22,18 @@ ${name }
 
 <br/>
 <c:forEach var="row" items="${rs.rows}">
-    Foo ${row.id}
-    Bar ${row.name}<br/>
+    id :-${row.id}
+    name:-  ${row.name}
+    text :- ${row.text}
+    <br/>
+    
 </c:forEach>
-
+--------------------------------------------------------<br/>
  <c:forEach var="row" items="${offers}">
-    Foo ${row.id}
-    Bar ${row.name}<br/>
+    id:- ${row.id}
+    name:- ${row.name}
+    text :- ${row.text}
+    <br/>
 </c:forEach>
 
 

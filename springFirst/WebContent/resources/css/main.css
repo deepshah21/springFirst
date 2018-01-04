@@ -1,0 +1,8 @@
+@CHARSET "ISO-8859-1";
+
+.formtable{ width: 400px;padding: 10px;border: 1px solid blue }
+inpyut[type = text]{width:250px;}
+textarea { width:250px;height: 300px}
+.label {text-align: right;vertical-align: top}
+.control {margin-left:10px}
+.error{margin-left: 10px;font-size: small;color: red}
