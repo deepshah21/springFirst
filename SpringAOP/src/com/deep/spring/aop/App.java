@@ -11,7 +11,13 @@ public class App {
 		ApplicationContext context  = new ClassPathXmlApplicationContext("com/deep/spring/aop/bean.xml");
 		Camera camera = (Camera) context.getBean("camera");
 		
-		camera.snap();
+		/*try {
+			camera.snap();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
+		camera.snapInt(5);
 		
 	}
 

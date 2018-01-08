@@ -69,40 +69,60 @@
 	    <version>3.1.0</version>
 	    <scope>provided</scope>
 	</dependency>
+	<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>jstl</artifactId>
+	    <version>1.2</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>5.1.6</version>
+	</dependency>
+	
+	<!--bean validation -->
+	<dependency>
+	    <groupId>javax.validation</groupId>
+	    <artifactId>validation-api</artifactId>
+	    <version>1.1.0.Final</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-validator</artifactId>
+	    <version>4.3.2.Final</version>
+	</dependency>
+	
+	<!-- create custom validator and it's use as validator-->
+	<dependency>
+	    <groupId>commons-validator</groupId>
+	    <artifactId>commons-validator</artifactId>
+	    <version>1.6</version>
+	</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core -->
 <dependency>
-    <groupId>javax.servlet</groupId>
-    <artifactId>jstl</artifactId>
-    <version>1.2</version>
+    <groupId>org.springframework.security</groupId>
+    <artifactId>spring-security-core</artifactId>
+    <version>4.2.3.RELEASE</version>
 </dependency>
 
-<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core -->
 <dependency>
-    <groupId>mysql</groupId>
-    <artifactId>mysql-connector-java</artifactId>
-    <version>5.1.6</version>
+    <groupId>org.springframework.security</groupId>
+    <artifactId>spring-security-web</artifactId>
+    <version>4.2.3.RELEASE</version>
 </dependency>
 
-<!--bean validation -->
+<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-config -->
 <dependency>
-    <groupId>javax.validation</groupId>
-    <artifactId>validation-api</artifactId>
-    <version>1.1.0.Final</version>
+    <groupId>org.springframework.security</groupId>
+    <artifactId>spring-security-config</artifactId>
+    <version>4.2.3.RELEASE</version>
 </dependency>
-
-<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
-<dependency>
-    <groupId>org.hibernate</groupId>
-    <artifactId>hibernate-validator</artifactId>
-    <version>4.3.2.Final</version>
-</dependency>
-
-<!-- create custom validator and it's use as validator-->
-<dependency>
-    <groupId>commons-validator</groupId>
-    <artifactId>commons-validator</artifactId>
-    <version>1.6</version>
-</dependency>
-
 
 
   </dependencies>
