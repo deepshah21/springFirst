@@ -1,19 +1,34 @@
 
-use login form of spring and use for authentication and redirection
-	1) need to download 3 spring securities dependencies
-	2) need to create filter with class :-
-	org.springframework.web.filter.DelegatingFilterProxy
-	and set url /*
-	3) need to create security-context.xml  add security namespace and edit it
-	4) add xml in to web.xml property 
+
+Spring Securities Tutorials 
+
+	use login form of spring and use for authentication and redirection
+		1) need to download 3 spring securities dependencies
+		2) need to create filter with class :-
+		org.springframework.web.filter.DelegatingFilterProxy
+		and set url /*
+		3) need to create security-context.xml  add security namespace and edit it
+		4) add xml in to web.xml property 
+		
+	create/customizing login form
+		
+		1) create login jsp same from source code of default spring login page 
+		2) create loginController in which login return
+		3) in security-context.xml file add <security:form-login login-processing-url="/login" />
+		4) add <security:intercept-url pattern="/login" access="permitAll"/> in security context.xml
+		5) for set error message in login.jsp , add login failure url("/login?error=true") within security-form in security context.xml
+		6) , make with jstl condition like ${param.error!=null} 
+		
+	customize with database 
+		1) create username (username, password, enabled) , authorities(username, authority) table
+		2) add <security:authentication-provider>
+				<security:jdbc-user-service data-source-ref="dataSource" />
+			</security:authentication-provider> within authentication-mananger in security-context.xml
+		3) add data in username and authorities table
+		
+	create New Account
 	
-create/customizing login form
 	
-	1) create login jsp same from source code of default spring login page 
-	2) create loginController in which login return
-	3) in security-context.xml file add <security:form-login login-processing-url="/login" />
-	4) add <security:intercept-url pattern="/login" access="permitAll"/> in security context.xml
-	5) for set error message in login.jsp , add login failure url("/login?error=true") within security-form in security context.xml
-	6) , make with jstl condition like ${param.error!=null} 
+
 	
 	
